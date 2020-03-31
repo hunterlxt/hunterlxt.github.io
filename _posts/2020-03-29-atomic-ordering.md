@@ -61,13 +61,13 @@ lock.store(false, Ordering::Release);
 ```rust
 // 使用 compare_and_swap 创建两个线程
 for _ in 0..10000 {
-    while m.compare_and_swap(false, true, Ordering::Acquire) {}
+    while a.compare_and_swap(false, true, Ordering::Acquire) {}
     do_something();
-    m1.store(false, Ordering::Release);
+    a.store(false, Ordering::Release);
 }
 // 使用 Mutex 创建两个线程
 for _ in 0..10000 {
-    let _lk = m2.lock().unwrap();
+    let _lk = m.lock().unwrap();
     do_something();
 }
 // 睡一下做个样子
