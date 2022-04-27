@@ -3,7 +3,7 @@ layout: post
 title: WireGuard：随时随地一键回家
 subtitle: 副标题
 date: 2021-11-13
-tags: [Network]
+tags: [linux]
 ---
 
 双十一薅了腾讯云三年vps的羊毛，准备拿来部署一个局域网方便在外用家里的开发机。wireguard ubuntu 原生的 VPN 工具，不过因为协议没有混淆，部署在海外 VPS 很容易被封，建议只用于正常 VPN 需求。部署很简单只需要： 1.公钥/私钥 2.wg配置文件 即可。

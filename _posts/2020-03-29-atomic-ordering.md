@@ -3,7 +3,7 @@ layout: post
 title: 聊一聊 Memory Order
 subtitle: 副标题
 date: 2020-03-29
-tags: [Concurrency, Rust]
+tags: [basic, rust]
 ---
 
 在学习 C++ 的时候接触了 Memory Order 的概念，今天刷知乎时看到有人讨论，写了几个 example 做了验证，发现之前对这个东西的理解有偏差。这次重新学习后做一个整理。
